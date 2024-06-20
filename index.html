@@ -16,16 +16,6 @@
       color: yellow;
     }
 
-    .stars {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      color: yellow;
-      font-size: 1.5vw;
-      white-space: pre;
-    }
-
     .fade {
       position: absolute;
       bottom: 0;
@@ -56,11 +46,11 @@
     }
 
     .crawl p {
-      text-align: justify;
+      text-align: center;
       font-size: 1.5vw;
-      line-height: 2em;
+      line-height: 1.5em;
       color: yellow;
-      margin: 0;
+      margin: 0 10%;
     }
 
     .crawl .title {
@@ -95,19 +85,21 @@
     /* Media queries for mobile devices */
     @media (max-width: 600px) {
       .crawl p {
-        font-size: 6vw;  /* Increase font size for mobile */
+        font-size: 5vw;  /* Increase font size for mobile */
+        margin: 0 5%;
       }
 
       .crawl .title {
-        font-size: 8vw;  /* Increase font size for mobile */
+        font-size: 6vw;  /* Increase font size for mobile */
       }
 
       .crawl .subtitle {
-        font-size: 10vw;  /* Increase font size for mobile */
+        font-size: 5.5vw;  /* Increase font size for mobile */
       }
 
       body {
-        padding: 10px; /* Add padding for mobile */
+        padding: 10px;  /* Add padding for mobile */
+      }
     }
   </style>
 </head>
