@@ -104,10 +104,12 @@
   </style>
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="https://ia903204.us.archive.org/16/items/StarWarsThemeSongByJohnWilliams/Star%20Wars%20Theme%20Song%20By%20John%20Williams.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <audio id="theme" src="https://ia903204.us.archive.org/16/items/StarWarsThemeSongByJohnWilliams/Star%20Wars%20Theme%20Song%20By%20John%20Williams.mp3" loop="loop"></audio>
+  <script>
+  window.onload = function() {
+    document.getElementById("my_audio").play();
+  }
+  </script>
   <div class="fade"></div>
   <div class="crawl-container">
     <div class="crawl">
