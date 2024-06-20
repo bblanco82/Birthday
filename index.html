@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: black;
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: yellow;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      color: yellow;
+      font-size: 1.5vw;
+      white-space: pre;
+    }
+
+    .fade {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 300px;
+      background-image: linear-gradient(to bottom, transparent, black 75%);
+      z-index: 2;
+    }
+
+    .crawl-container {
+      position: relative;
+      width: 80%;
+      max-width: 800px;
+      height: 100%;
+      overflow: hidden;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .crawl {
+      position: absolute;
+      top: 100vh;
+      width: 100%;
+      transform-origin: 50% 100%;
+      animation: crawl 60s linear forwards;
+    }
+
+    .crawl p {
+      text-align: justify;
+      font-size: 1.5vw;
+      line-height: 2em;
+      color: yellow;
+      margin: 0;
+    }
+
+    .crawl .title {
+      font-size: 2vw;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2vh;
+    }
+
+    .crawl .subtitle {
+      font-size: 1.8vw;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3vh;
+    }
+
+    @keyframes crawl {
+      0% {
+        top: 100vh;
+        transform: rotateX(20deg) translateY(0);
+      }
+      50% {
+        top: 50vh;
+        transform: rotateX(25deg) translateY(-50vh);
+      }
+      100% {
+        top: 50%;
+        transform: rotateX(0deg) translateY(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fade"></div>
+  <div class="crawl-container">
+    <div class="crawl">
+      <p class="title">A long time ago, in a galaxy far, far away....</p>
+      <p class="subtitle">Episode VIII</p>
+      <p class="subtitle">THE BIRTHDAY CELEBRATION</p>
+      <p>It is a period of joyful anticipation. The twin suns of Uncle Ben's 42nd and Niece Lucy's 8th birthdays are about to rise, casting a radiant light over the galaxy.</p>
+      <p>On <b>Saturday, August 17, 2024</b>, starting at <b>3:00 PM</b>, friends and family are summoned to the homestead of Uncle Ben and Auntie Nina. The theme is <b>Summer</b>, and the force of fun shall guide the festivities.</p>
+      <p>In the warm embrace of summer, a splash pad awaits, promising refreshing adventures for younglings and padawans alike—weather permitting. The air will be filled with the tantalizing aroma of <b>pizza</b> and the sweetness of <b>birthday cake</b>.</p>
+      <p>But that's not all! Auntie Debbie will be hosting her legendary <b>Birthday Trivia Challenge</b>, where knowledge of the galaxy will be tested and celebrated.</p>
+      <p>The hosts will provide the food, dessert, and coffee. Mom is graciously requested to bring her renowned <b>Caesar salad</b>. While there will be <b>beer</b> available, feel free to bring any drinks you desire.</p>
+      <p><b>Please reply to this email</b> to confirm your attendance and join us in this dual celebration. May the force of family and friendship be with us all!</p>
+    </div>
+  </div>
+</body>
+</html>
